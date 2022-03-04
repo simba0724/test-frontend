@@ -15,11 +15,11 @@ export const sendGlobalMessage = (message) => async dispatch => {
 
     dispatch(getGlobalMessages());
   } catch (err) {
-    const errors = err.response.data.errors;
+    // const errors = err.response.data.errors;
 
-    if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
-    }
+    // if (errors) {
+    //   errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+    // }
   }
 }
 
@@ -32,11 +32,11 @@ export const getConversationMessages = (receiveId) => async dispatch => {
 	      payload: res.data
 	    });
   } catch (err) {
-    const errors = err.response.data.errors;
+    // const errors = err.response.data.errors;
 
-    if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
-    }
+    // if (errors) {
+    //   errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+    // }
   }
 }
 
@@ -46,11 +46,11 @@ export const sendConversationMessage = (receiveId, message) => async dispatch =>
 
     // dispatch(getConversationMessages(receiveId));
   } catch (err) {
-    const errors = err.response.data.errors;
+    // const errors = err.response.data.errors;
 
-    if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
-    }
+    // if (errors) {
+    //   errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+    // }
   }
 }
 
