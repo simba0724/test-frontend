@@ -52,7 +52,7 @@ const App = () => {
     const token = localStorage.getItem("token");
     const userid = localStorage.getItem('userid');
     if (token && !socket) {
-      const newSocket = io("http://localhost:5000", {
+      const newSocket = io("https://mern-backend-test.herokuapp.com/", {
         query: {
           token: localStorage.getItem("token"),
         },

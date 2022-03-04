@@ -3,7 +3,7 @@ import store from '../store';
 import { LOGOUT } from '../actions/types';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://mern-backend-test.herokuapp.com/api',
   headers: {
     'Content-Type': 'application/json'
   }
